@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML Activity</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; margin: 1.5rem; max-width: 900px; line-height: 1.6; color: #222; }
+    nav a { margin-right: 1rem; color: #0366d6; text-decoration: none; }
+    figure { max-width: 520px; margin: 0.75rem 0; }
+    img { display: block; max-width: 100%; height: auto; }
+    .media { margin: 0.75rem 0; }
+    pre { background: #111; color: #e6e6e6; padding: 0.5rem; overflow-x: auto; border-radius: 6px; }
+  </style>
+</head>
+<body>
+
+  <header id="main-header">
+    <h1 id="page-title">HTML Activity</h1>
+    <nav id="top-nav">
+      <a href="#images-section">Images</a>
+      <a href="#hyperlinks-section">Hyperlinks</a>
+      <a href="#multimedia-section">Multimedia</a>
+      <a href="#useful-tags-section">Useful Tags</a>
+      <a href="#dom-section">HTML DOM</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">MDN HTML Reference</a>
+      <a href="mailto:vince@carsu.com">Email</a>
+    </nav>
+  </header>
+
+  <!-- 1. Images -->
+  <section id="images-section">
+    <h2>Images</h2>
+
+    <img id="img-dbs-25204" src="dragon-ball-super-3840x2160-25204.jpg" alt="Goku powering up with energy aura" width="460">
+
+    <figure>
+      <img id="img-goku-vegeta" src="goku-vs-vegeta.jpg" alt="Goku and Vegeta clashing in mid-air">
+      <figcaption>Goku VS Vegeta.</figcaption>
+    </figure>
+
+    <img id="img-dbs-21220" src="dragon-ball-super-3840x2160-21220.jpg" alt="Group shot of Dragon Ball characters">
+  </section>
+
+  <!-- 2. Hyperlinks -->
+  <section id="hyperlinks-section">
+    <h2>Hyperlinks</h2>
+    <ul>
+      <li>Internal link: <a href="#images-section">See Images</a></li>
+      <li>External link: <a href="https://www.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a></li>
+      <li>Email link: <a href="mailto:vince@carsu.com">Send me an email</a></li>
+      <li>Same-page anchor: <a href="#multimedia-section">Jump to Multimedia</a></li>
+    </ul>
+  </section>
+
+  <!-- 3. Multimedia -->
+  <section id="multimedia-section">
+    <h2>Multimedia</h2>
+
+    <div class="media">
+      <audio id="audio-cha-la" controls>
+        <source src="Cha-La Head-Cha-La (TV-size) ~ Dragon Ball Z (Lyrics & Translation).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="media">
+      <video id="video-opening" controls width="640">
+        <source src="Chala head chala.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </div>
+  </section>
+
+  <!-- 4. Useful Tags -->
+  <section id="useful-tags-section">
+    <h2>Useful Tags</h2>
+
+    <!-- Comment: Using blockquote to present a notable quote and show semantic markup for quoted text -->
+    <blockquote cite="https://dragonball.fandom.com/wiki/Goku">
+      "I am the hope of the universe. I am the answer to all living things that cry out for peace."
+    </blockquote>
+
+    <!-- Comment: Using abbr to expand the abbreviation DBZ for accessibility and hover text -->
+    <p>The anime <abbr title="Dragon Ball Z">DBZ</abbr> has a long history and many iconic themes.</p>
+
+    <!-- Comment: Using pre and code to show an example snippet of HTML markup for the multimedia element -->
+    <pre><code>&lt;audio src="Cha-La Head-Cha-La (TV-size) ~ Dragon Ball Z (Lyrics & Translation).mp3" controls&gt;&lt;/audio&gt;</code></pre>
+  </section>
+
+  <!-- 5. HTML DOM -->
+  <section id="dom-section">
+    <h2>HTML DOM</h2>
+    <p>Screenshot of the DOM tree already attached to the folder</p>
+  </section>
+
+  <!--
+    Parent-child relationships observed in the DOM (3 sentences):
+
+    The <body> element is the parent of each section; for example, <section id="images-section"> is a direct child of <body>. Inside that section, the <figure> element is the parent of <img id="img-goku-vegeta"> and its <figcaption>, showing how a figure groups an image and caption. Likewise, <section id="multimedia-section"> is the parent of <audio id="audio-cha-la"> and <video id="video-opening">, which are children of that section.
+  -->
+
+</body>
+</html>
