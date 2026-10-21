@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusHub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="#home">Campus<span>Hub</span></a>
+
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <label class="switch">
+      Dark mode
+      <input type="checkbox" id="darkToggle">
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <main>
+    <section id="home" class="page">
+      <div class="card">
+        <div class="avatar">JD</div>
+        <h1>Juan Dela Cruz</h1>
+        <p class="program">BS Information Technology, 3rd Year</p>
+
+        <ul class="tags">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <div class="actions">
+          <button id="likeBtn" class="btn primary">♥ Like <span class="count" id="likeCount">24</span></button>
+          <button id="resetBtn" class="btn outline">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="page" hidden>
+      <div class="card">
+        <h2>Courses</h2>
+        <h3>IT 110 - Web Development</h3>
+        <p class="program">Build pages with HTML, CSS, and JavaScript.</p>
+        <button id="enrollBtn" class="btn primary">Enroll</button>
+      </div>
+    </section>
+
+    <section id="contact" class="page" hidden>
+      <div class="card">
+        <h2>Contact</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your name" required>
+          <input type="email" id="email" placeholder="Your email" required>
+          <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn primary">Send</button>
+        </form>
+        <p id="thanks" hidden>Thanks! Your message was sent.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 CampusHub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
